@@ -1,4 +1,4 @@
-// ConsoleApplication1.cpp: archivo de proyecto principal.
+// Hoja 1 punteros Ejercicio 7
 
 #include "stdafx.h"
 #include <conio.h>
