@@ -1,4 +1,5 @@
 // ConsoleApplication8.cpp : main project file.
+//incompleto
 
 #include "stdafx.h"
 #include <iostream>
