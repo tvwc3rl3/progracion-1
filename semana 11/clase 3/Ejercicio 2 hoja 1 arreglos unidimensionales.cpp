@@ -1,5 +1,4 @@
 // ConsoleApplication8.cpp : main project file.
-//incompleto
 
 #include "stdafx.h"
 #include <iostream>
@@ -29,6 +28,29 @@ void CalcularCantPersonas(float *arrPesos, int *cantDelgados, int *cantMedianos,
 	}
 }
 
+void IngresarValores(float *arrPesos) {
+	int *indice = new int;
+	for (*indice = 0; *indice < NUMELEMENTOS; (*indice)++) {
+		cout << "Ingrese el peso del cliente: ";
+		cin >> arrPesos[*indice];
+	}
+}
+
+float CalcularMayorPeso(float *arrPesos) {
+	float *mayor = new float;
+	int *indice = new int;
+	*mayor = arrPesos[0];
+	for (*indice = 0; *indice < NUMELEMENTOS; (*indice)++) {
+		if (arrPesos[*indice] > *mayor)
+			*mayor = arrPesos[*indice];
+	}
+	return *mayor;
+}
+
+float CalcularPesoPromedio(float *arrPesos) {
+	
+}
+
 int main()
 {
 	
@@ -42,13 +64,13 @@ int main()
 
 	IngresarValores(arrPesos);
 	*promedio = CalcularPesoPromedio(arrPesos);
-	*mayorPeso = CalcularMayorPeso(arrPesos)
+	*mayorPeso = CalcularMayorPeso(arrPesos);
 	CalcularCantPersonas(arrPesos, cantDelgados, cantMedianos, cantGruesos);
 	
 	cout << "El promedio es: " << *promedio << endl;
 	cout << "El mayor peso es: " << *mayorPeso << endl;
-	cout << "la cantidadad de delgados es: " << *promedio << endl;
-	cout << "El promedio es: " << *promedio << endl;
+	cout << "La cantidadad de delgados es: " << *cantDelgados << endl;
+	cout << "La cantidadad de medianos es: " << *cantMedianos << endl;
 
 	
 
