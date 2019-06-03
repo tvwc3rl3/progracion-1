@@ -25,6 +25,16 @@ void GenerarArregloMontos(int *numPersonas, int *arrMontos) {
 	}
 }
 
+void GenerarArregloMontosFORMA2(int *numPersonas, int *arrMontos) {
+
+	int *indice = new int;
+	for (*indice = 0; *indice < *numPersonas; (*indice)++) {
+		//un monto aleatorio entre 25 y 500 Nuevos soles
+		
+		arrMontos[*indice] = Random::Random().Next(25, 501);
+	}
+}
+
 void MostrarArreglo(int *numPersonas, int *arrMontos) {
 	int *indice = new int;
 	for (*indice = 0; *indice < *numPersonas; (*indice)++) {
