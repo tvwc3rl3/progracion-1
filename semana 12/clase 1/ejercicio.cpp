@@ -30,6 +30,11 @@ int main()
 		cout << "Ingrese el sexo: " << *indice + 1 << " : ";
 		cin >> arrPersona[*indice].sexo;
 	}
-    _getch();
-    return 0;
+	//mostrar los datos
+	for (*indice = 0; *indice < 5; (*indice)++) {
+		cout << "arrPersonas [" << *indice + 1 << "] . edad =" << arrPersona[*indice].edad << endl;
+		cout << "arrPersonas [" << *indice + 1 << "] . sexo =" << arrPersona[*indice].sexo << endl;
+	}
+	_getch();
+	return 0;
 }
