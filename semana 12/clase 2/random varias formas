@@ -1,0 +1,47 @@
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+#include <time.h>
+#include <Windows.h>
+
+using namespace System;
+using namespace std;
+
+int main()
+{
+	int numero1, numero2, numero3, numero4, numero5, numero6, *arrNumeros;
+	arrNumeros = new int[5];
+	Random objRandom;
+	//generar un numero aleatorio del 0 al 7
+	srand(time(NULL)); //incluir la libreria time.h
+	numero1 = rand() % 8;
+	numero2 = objRandom.Next(0, 8);
+	cout << numero1 << endl;
+	cout << numero2 << endl;
+
+	//genera un numero aleatorio del 1 al 8
+	srand(time(NULL)); //incluir la libreria time.h
+	numero3 = rand() % 8 + 1;
+	numero4 = objRandom.Next(1, 9);
+	cout << numero3 << endl;
+	cout << numero4 << endl;
+
+	//genera un numero aleatorio entre 25 y 35
+	srand(time(NULL)); //incluir la libreria time.h
+	numero5 = rand() % 11 + 25;
+	numero6 = objRandom.Next(25, 36);
+	cout << numero5 << endl;
+	cout << numero6 << endl;
+
+	//generamos aleatorios en el rango del 0 al 7 usando random
+	for (int indice = 0; indice < 5; indice++)
+	{
+		arrNumeros[indice] = objRandom.Next(0, 8);
+	}
+	cout << "Usando objrandom: " << endl;
+	for (int indice = 0; indice < 5; indice++)
+		cout << arrNumeros[indice] << endl;
+
+	_getch();
+	return 0;
+}
