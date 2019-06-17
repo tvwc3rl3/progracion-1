@@ -94,7 +94,7 @@ void CalcularMesMenorVenta(float **matriz) {
 	cout << "Meses con menor venta: ";
 	for (int indice = 0; indice < FILAS; indice++) {
 		if (ventasMensuales[indice] == ventaMenor) {
-			cout << "Mes " << indice++ << endl;
+			cout << "Mes " << indice++ << endl;//corregir indice++
 		}
 	}
 }
@@ -129,3 +129,4 @@ int main()
 	_getch();
     return 0;
 }
+
