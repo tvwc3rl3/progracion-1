@@ -96,9 +96,6 @@ void CalcularMesMenorVenta(float **matriz) {
 		if (ventasMensuales[indice] == ventaMenor) {
 			cout << "Mes " << indice++ << endl;
 		}
-		{
-
-		}
 	}
 }
 
