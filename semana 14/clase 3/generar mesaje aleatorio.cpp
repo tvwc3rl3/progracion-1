@@ -53,13 +53,15 @@ int main()
 	bool consecutivo, alterno;
 
 	contador = 1;
-	while (1)
-	{
-		//la logica pedidda
-		srand(time(NULL));
-		//generamos un numero entre 20 y 30
-		longMensaje = rand() % 11 + 20;
-		Generar_Mensaje(mensaje, longMensaje);
+	//while (1)
+	//{
+	//	//la logica pedidda
+	//	srand(time(NULL));
+	//	//generamos un numero entre 20 y 30
+	//	longMensaje = rand() % 11 + 20;
+	//	Generar_Mensaje(mensaje, longMensaje);
+		mensaje = "ICSXIRT"; //Para probar el programa
+		longMensaje = 7;	 //Para probar el programa
 		cout << "Mensaje: " << contador << " : " << endl;
 		Imprimir_Mensaje(mensaje, longMensaje);
 		cout << endl;
@@ -74,7 +76,7 @@ int main()
 		cout << "Presione una tecla para ver el siguiente mensaje..." << endl;
 		_getch();
 		
-	}
+	//}
 	delete[]mensaje;
     _getch();
     return 0;
